@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="kubera.github.io/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="kubera.github.io/POM/4.0.0 kubera.github.io/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>ch.fhnw.business.iwi</groupId>
+		<artifactId>athene</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>athene.service</artifactId>
+
+	<name>Athene Business Layer</name>
+	<description>Athene Business Layer</description>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<env>default</env>
+	</properties>
+
+	<modules>
+		<module>athene-service-model-api</module>
+		<module>athene-service-concept-api</module>
+		<module>athene-service-model</module>
+		<module>athene-service-view</module>
+		<module>athene-service-concept</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.jena</groupId>
+				<artifactId>jena-core</artifactId>
+				<version>3.0.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

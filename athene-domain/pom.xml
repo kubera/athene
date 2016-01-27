@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="kubera.github.io/POM/4.0.0"
+	xsi:schemaLocation="kubera.github.io/POM/4.0.0 kubera.github.io/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ch.fhnw.business.iwi</groupId>
+		<artifactId>athene</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>athene.domain</artifactId>
+
+	<name>Athene Domain Model</name>
+
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+		</plugins>
+	</build>
+
+</project>

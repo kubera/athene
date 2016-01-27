@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="kubera.github.io/POM/4.0.0 kubera.github.io/xsd/maven-4.0.0.xsd"
+	xmlns="kubera.github.io/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ch.fhnw.business.iwi</groupId>
+		<artifactId>athene.store</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>athene.store.graph</artifactId>
+	<version>0.1.0.SNAPSHOT</version>
+	<name>Athene Store Graph</name>
+	<url>kubera.github.io</url>
+	<dependencies>
+		<dependency>
+			<groupId>ch.fhnw.business.iwi</groupId>
+			<artifactId>athene.store.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

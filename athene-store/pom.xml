@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="kubera.github.io/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="kubera.github.io/POM/4.0.0 kubera.github.io/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>ch.fhnw.business.iwi</groupId>
+		<artifactId>athene</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>athene.store</artifactId>
+
+	<name>Athene Persistence Layer</name>
+	<description>Athene Persistence Layer</description>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<env>default</env>
+	</properties>
+
+	<modules>
+		<module>athene-store-api</module>
+		<module>athene-store-graph</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.neo4j</groupId>
+				<artifactId>neo4j</artifactId>
+				<version>2.3.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
